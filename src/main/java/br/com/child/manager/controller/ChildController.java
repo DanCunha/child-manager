@@ -59,7 +59,7 @@ public class ChildController {
     }
 
     @GetMapping("/{id}")
-    @ApiOperation(value = "List child", response = Child.class)
+    @ApiOperation(value = "Find child by id", response = Child.class)
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Successfully created a new child"),
             @ApiResponse(code = 400, message = "Validation error")
